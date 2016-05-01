@@ -1,16 +1,53 @@
-# Brande_CSCI2270_FinalProject
-For my final project I'm going to create a gym reservation system. People will be able to schedule themselves in classes, if there are spots available, see the times and days classes are held and see how long the classes last. I will implement this using arrays and vectors where the array stores the set classes. The array will point to a vector containing the days of the week and times, read through a text file, and that vector will also point to the vector storing the names of people that are signed up for classes.
+# Tran_CSCI2270_FinalProject
 
-Use:
-Download FinalProject.cpp FinalProject.h gymReservation.cpp and run through CodeBlocks, Sublime, or any functional development environment 
--I run the program through the terminal
+Project summary: We live in a society where GPS navigation is a crucial tool to every driver today. 
+This GPS can only travel within Colorado and its cities. However, the user does 
+have the option to add another city to the map in case the GPS has forgotten to
+include that city or the driver want to drive to a city out of state. The user
+also has the option of deleting a city if they do not want to go through that city 
+at all. The GPS has the option of finding the path with the shortest distance 
+and the path with the shortest time. It also includes the option of avoiding toll
+and finding the longest path instead of the shortest path. 
 
-Environment:
-Can be used on Mac, or Windows or through the VM 
+The following are all the 10 methods and their inputs:
+1) Add road: city1, city 2, distance, speed limit, toll
+2) Add city: city
+3) Display
+4) Shortest distance: city1, city2
+5) Shortest time: city1, city2
+6) Avoid toll
+7) Longest path: city1, city2
+8) Show all time and distance: city
+9) Delete city: city
+10) Delete edges: city
+
+The following are the menu options of the project:
+Menu options:
+1) Display 
+2) Insert city
+3) Shortest distance
+4) Shortest time
+5) Longest distance
+6) Avoid toll
+7) Show all time and distance
+8) Delete city
+9) Quit
 
 
-Open Bugs/Fixes:
--"Vendor Login" and "Add Classes" don't function properly
+How to run: Pull Project.cpp, GPS.h, GPS.cpp, and cities.txt and run it in a project in a compiler, for example, in CodeBlocks. Identical to class assignments.
 
-Contributors:
-Me, Myself, I
+
+Bugs:
+
+
+Sytem Requirements: Any OS using any compiler. CodeBlocks recommended.
+
+
+Dependencies: None
+
+
+Group members: None
+
+
+Contributers: None
+
