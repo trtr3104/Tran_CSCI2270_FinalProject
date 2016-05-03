@@ -419,7 +419,8 @@ void GPS::showAlltimeDistance(std::string starting)
 
 void GPS::deleteCity(std::string city)
 {
-    vertex *delCity = findVertex(city);
+	//vertex *delCity = findVertex(city);
+	vertex *delCity = 0;
 	int delCityIdx = 0;
 
 	for (int i = 0; i < vertices.size(); ++i)
@@ -427,6 +428,7 @@ void GPS::deleteCity(std::string city)
 		{
 			delCity = &vertices[i];
 			delCityIdx = i;
+			break;
 		}
 
 	if (0 == delCity)
@@ -435,9 +437,20 @@ void GPS::deleteCity(std::string city)
 	}
 	else
 	{
-		for (int j = 0; j < delCity->adj.size(); j++) {
+		for (int j = delCity->adj.size()-1; j >=0 ; j--) {
 			deleteEdge(delCity->name, delCity->adj.at(j).v->name);
 		}
+
+		for (int k = delCityIdx +1; k < vertices.size(); ++k)
+		for (int i = 0; i < vertices.size(); ++i)
+			if (i != delCityIdx)
+			{
+				for (int j = 0; j < vertices[i].adj.size(); ++j)
+					if (vertices[i].adj.at(j).v->name == vertices[k].name)
+				{
+					vertices[i].adj.at(j).v = &vertices[k - 1];
+				}
+			}
 
 		vertices.erase(vertices.begin() + delCityIdx);
 	}
