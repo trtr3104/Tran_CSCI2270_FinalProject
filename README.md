@@ -34,13 +34,13 @@ Menu options:
 9) Quit
 
 
-How to run: Pull Project.cpp, GPS.h, GPS.cpp, and cities.txt and run it in a project in a compiler, for example, in CodeBlocks. Identical to class assignments.
+How to run: Clone Project.cpp, GPS.h, GPS.cpp, and cities.txt and run it in a project using any platform with a C++ compiler. Identical to class assignments.
 
 
-Bugs:
+Bugs: Delete city is not deleting correct. Fixed on 5/3/16.
 
 
-Sytem Requirements: Any OS using any compiler. CodeBlocks recommended.
+Sytem Requirements: Any OS.
 
 
 Dependencies: None
